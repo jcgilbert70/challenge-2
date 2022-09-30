@@ -1,8 +1,9 @@
 :root {
     /* colors */
     --black: black;
-    --blue300: rgb(205, 205, 255);
-    --grey600: rgb(87, 87, 87);
+    --blue300: rgb(160, 160, 255);
+    --grey200: rgb(193, 195, 224);
+    --grey700: #394f5a;
     --white: white;
     
     /* fonts */
@@ -11,32 +12,27 @@
     
     /* spacing */
 
-
-
-
 }
-
-
-
-
-
-
-
-
-
 
 
 
 
 
 body {
-    background-color: var(--blue300);
+    background-color: var(--grey200);
+    min-width: 768px;
 }
 
+.header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: linear-gradient(270deg, var(--blue300), var(--grey700));
+}
 
 .header h1 {
     display: inline-block;
     font-size: 48px;
+    color: var(--grey200)
 }
 
 .header div {
@@ -52,3 +48,28 @@ body {
     margin-left: 25px;
 }
     
+a {
+    color: var(--grey200);
+}
+
+p {
+    color: var(--grey200);
+    
+}
+
+
+
+h2 {
+    color: var(--grey700);
+}
+
+
+
+
+
+.section-block {
+    background: linear-gradient(270deg, var(--blue300), var(--grey700));
+    border-radius: var(--spacing-unit-small);
+    color: var(--grey200)
+    padding: var(--spacing-unit-small);
+  }
