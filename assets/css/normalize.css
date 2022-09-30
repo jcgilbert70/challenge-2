@@ -1,0 +1,54 @@
+:root {
+    /* colors */
+    --black: black;
+    --blue300: rgb(205, 205, 255);
+    --grey600: rgb(87, 87, 87);
+    --white: white;
+    
+    /* fonts */
+    
+    
+    
+    /* spacing */
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    background-color: var(--blue300);
+}
+
+
+.header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+.header div {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+.header div ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+    
