@@ -6,6 +6,13 @@
     --grey700: #394f5a;
     --white: white;
     
+
+
+    /* borders */
+
+
+
+    --border-small: 5px;
     /* fonts */
     
     
@@ -20,44 +27,60 @@
 
 body {
     background-color: var(--grey200);
-    min-width: 768px;
 }
 
-.header {
-    padding: 20px;
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background: linear-gradient(270deg, var(--blue300), var(--grey700));
 }
 
-.header h1 {
+header h1 {
     display: inline-block;
     font-size: 48px;
     color: var(--grey200)
 }
 
-.header div {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+nav {
+    display: flex;
+    /* Align the child elements to the right side of the parent */
+    justify-content: flex-end;
 }
 
-.header div ul li {
-    display: inline-block;
-    margin-left: 25px;
+nav a {
+    color: var(--grey200);
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+  }
+
+.float-left {
+    float: left;
+    margin-right: 25px;
 }
-    
+
 a {
     color: var(--grey200);
 }
 
 p {
-    color: var(--grey200);
-    
+    color: var(--grey200);   
 }
 
+header:hover {
+    box-shadow: inset 0px 0px 12px black, opx opx 20px black;
+}
 
+.flex-center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 h2 {
     color: var(--grey700);
@@ -69,7 +92,21 @@ h2 {
 
 .section-block {
     background: linear-gradient(270deg, var(--blue300), var(--grey700));
-    border-radius: var(--spacing-unit-small);
-    color: var(--grey200)
-    padding: var(--spacing-unit-small);
+    border: var(--border-small);
+    color: var(--grey200);
+  }
+
+  @media screen and (max-width: 768px) {
+    header, profile, main {
+      flex-direction: column;
+    }
+  
+    section {
+      padding-right: 0;
+    }
+  
+    aside {
+      width: 100%;
+      text-align: center;
+    }
   }
