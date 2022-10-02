@@ -88,13 +88,16 @@ nav:hover {
 
 main {
     display: block;
-    margin-right: var(--margin-medium);
+    margin-right: var(--margin-small);
 }
 
 h2 {
     display: block;
     color: var(--grey700);
+}
 
+aside {
+    margin-right: var(--margin-small);
 }
 
 p {
@@ -235,11 +238,10 @@ footer {
         text-align: center;
     }
 
-    section {
-        margin-top: var(--margin-small);
-        margin-bottom: var(--margin-small);
-        margin-left: var(--margin-medium);
-        margin-right: var(--margin-medium);
+.info img{
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
     }
 footer {
     display: block;
