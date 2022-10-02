@@ -16,10 +16,20 @@
     <h1>Hi, I'm Jeff</h1>
     <!-- Navbar -->
     <nav>
-      <a tabindex="0" href="#about-me">About Me</a>
-      <a href="#work">Work</a>
-      <a href="#resume">Resume</a>
-      <a href="#contact-info">Contact Info</a>
+      <ul>
+        <li>
+          <a tabindex="0" href="#about-me">About Me</a>
+        </li>
+        <li>
+          <a href="#work">Work</a>
+        </li>
+        <li>
+          <a href="#resume">Resume</a>
+        </li>
+        <li>
+          <a href="#contact-info">Contact Info</a>
+        </li>
+      </ul>
     </nav>
   </header>
 
@@ -27,22 +37,23 @@
   <main>
     <!-- Profile Pic -->
     <div>
-      <img src="./assets/img/profile.jpg" class="float"/>
+      <img src="./assets/img/profile.jpg" class="float" />
+
+
+      <!-- Section "about me" -->
+      <aside>
+        <h2 class="me">About Me</h2>
+        <div id="about-me" class="about-me"></div>
+        <p class="section-block">
+          information about me information about me information about me information about me information about me
+          information about me information about me information about me information about me
+        </p>
+      </aside>
     </div>
 
-    <!-- Section "about me" -->
-    <aside>
-      <h2 class="me">About Me</h2>
-      <div id="about-me" class="about-me"></div>
-      <p class="section-block">
-        information about me information about me information about me information about me information about me
-        information about me information about me information about me information about me
-      </p>
-    </aside>
-    
     <!-- Work link content -->
-    <article>
-      <div class="content">
+    <article class="content">
+      <div>
         <div id="work" class="work"></div>
         <h3><span style="padding-left: 60px;"></span>Work<span style="padding-left: 60px;"></span></h3>
       </div>
@@ -76,6 +87,20 @@
 
 
   <footer>
-    <!-- Contact Information -->
+    <nav>
+      <h4>Contact Information</h4>
+      <!-- Contact Information -->
+      <ul>
+        <li>
+          <a tabindex="0" href="#phone">Phone: 815.667.0402</a>
+        </li>
+        <li>
+          <a href="#email">Email: jcgilbert70@gmail.com</a>
+        </li>
+        <li>
+          <a href="#Indeed">Indeed</a>
+        </li>
+      </ul>
+    </nav>
   </footer>
 </body>
