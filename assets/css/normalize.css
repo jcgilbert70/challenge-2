@@ -7,8 +7,6 @@
     --white: white;
     --grey100: gainsboro;
 
-
-
     /* borders */
     --border-small: 5px;
     --border-large: 10px;
@@ -32,82 +30,66 @@
     box-sizing: border-box;
 }
 
-
 body {
     background-color: var(--grey200);
 }
 
-
+/* Code for the header */
 
 header {
     background: linear-gradient(270deg, var(--blue300), var(--grey700));
-    display: inline-block;
+    display: block;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: var(--font-size-med);
-    justify-content: space-between;
-    max-height: 200px;
     padding: var(--padding-larger);
     width: 100%;
-
 }
 
 h1 {
     display: inline-block;
     font-size: 48px;
     color: var(--grey200);
-    padding-bottom: 10px;
+    padding-bottom: var(--padding-small);
 }
 
+nav {
+    float: right;
+    font-size: var(--font-size-med);
+    padding: var(--padding-medium);
+    color: var(--grey200);
+    font-size: var(--font-size-med);
 
-
-header nav {
-    text-align: right;
 }
 
 nav a {
     color: var(--grey200);
-    padding: 10px 15px;
+    padding: 10px;
     text-decoration: none;
-    font-size: 1.25rem;
-}
-
-a {
-    color: var(--grey200)
 }
 
 /* NEED TO FIGURE OUT HOVER BUG, HOVER NOT WORKING */
-nav:hover {
-    box-shadow: inset 0px 0px 12px black, opx opx 20px black;
+nav a:hover {
+    box-shadow: inset 0px 7px 12px black, opx 10px 20px black;
 }
+
+/* CODE FOR MAIN */
 
 main {
     display: block;
-    margin-right: var(--margin-small);
 }
 
-h2 {
-    display: block;
-    color: var(--grey700);
+.info {
+    display: flex;
+}
+
+.info img {
+    max-height: 340px;
+    max-width: 340px;
+    margin: var(--margin-small);
+
 }
 
 aside {
-    margin-right: var(--margin-small);
-}
-
-p {
-    color: var(--grey200);
-}
-
-.me {
-    border-style: solid;
-    border-width: 2px;
-    padding: var(--padding-medium);
-    flex: 1;
-    box-shadow: 10px 10px 5px var(--grey700);
-    margin-top: var(--margin-medium);
-    margin-left: var(--margin-small);
-    margin-right: var(--margin-small);
-    width: 100%;
+    margin-right: var(--margin-medium);
 }
 
 h2 {
@@ -120,9 +102,18 @@ h2 {
     text-align: center;
     color: var(--grey700);
     font-size: 24px;
-    margin-left: var(--margin-large);
-    margin-right: var(--margin-large);
+}
 
+.me {
+    border-style: solid;
+    border-width: 2px;
+    padding: var(--padding-medium);
+    flex: 1;
+    box-shadow: 10px 10px 5px var(--grey700);
+    margin-top: var(--margin-medium);
+    margin-left: var(--margin-small);
+    margin-right: var(--margin-small);
+    width: 100%;
 }
 
 .bio {
@@ -154,9 +145,12 @@ h3 {
     font-size: 48px;
     margin-left: auto;
     margin-right: auto;
-
 }
 
+.work {
+    margin-left: var(--margin-small);
+    margin-right: var(--margin-small);
+}
 /* images within each card representing a different project in portfolio */
 .card img {
     display: block;
@@ -164,7 +158,6 @@ h3 {
     max-height: 77%;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
 }
 
 /* represents a different poject within portfolio */
@@ -178,17 +171,22 @@ h3 {
     box-shadow: 10px 10px 5px var(--grey700);
     height: 300px;
     min-width: 300px;
-
-
-}
-
-section.card {
     display: inline-block;
     flex-wrap: wrap;
     justify-content: space-between;
     margin: var(--margin-small);
 
+    text-decoration: none;
+}
 
+h4 {
+    background-color: linear-gradient(270deg, var(--blue300), var(--grey700));
+    border-style: solid;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-width: 2px;
+    padding: var(--padding-small);
+    margin-bottom: 2px;
 }
 
 h5 {
@@ -218,27 +216,20 @@ footer {
         flex-wrap: wrap;
         display: flex;
     }
-
+.me {
+    margin-top: 1px;
+}
+    .info,
     main div,
     section.card {
         margin-left: auto;
         margin-right: auto;
     }
 
+    .info {
+        display: block;
+    }
 
 }
 
 header,
-
-
-article,
-h3,
-.content {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-footer {
-    display: block;
-}
-}
