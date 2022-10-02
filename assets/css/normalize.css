@@ -41,6 +41,7 @@ header {
     display: block;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding: var(--padding-larger);
+    padding-bottom: 50px;
     width: 100%;
 }
 
@@ -48,6 +49,7 @@ h1 {
     display: inline-block;
     font-size: 48px;
     color: var(--grey200);
+    padding-top: var(--padding-medium);
     padding-bottom: var(--padding-small);
 }
 
@@ -55,13 +57,12 @@ nav {
     float: right;
     font-size: var(--font-size-med);
     padding: var(--padding-medium);
-    color: var(--grey200);
     font-size: var(--font-size-med);
 
 }
 
 nav a {
-    color: var(--grey200);
+    color: var(--white);
     padding: 10px;
     text-decoration: none;
 }
@@ -139,7 +140,7 @@ h3 {
     border-style: solid;
     border-width: var(--border-small);
     border-radius: 10px;
-    display: inline-block;
+    display: block;
     text-align: center;
     color: var(--grey200);
     font-size: 48px;
@@ -148,14 +149,15 @@ h3 {
 }
 
 .work {
-    margin-left: var(--margin-small);
-    margin-right: var(--margin-small);
+    margin-left: auto;
+    margin-right: auto;
 }
+
 /* images within each card representing a different project in portfolio */
 .card img {
     display: block;
     max-width: 90%;
-    max-height: 77%;
+    max-height: 85%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -164,7 +166,7 @@ h3 {
 .card {
     background-color: var(--grey100);
     border-style: solid;
-    border-width: 2px;
+    border-width: var(--border-small);
     border-radius: 10px;
     border-color: var(--grey700);
     color: var(--grey200);
@@ -175,16 +177,18 @@ h3 {
     flex-wrap: wrap;
     justify-content: space-between;
     margin: var(--margin-small);
+}
 
+title {
+    background-color: linear-gradient(270deg, var(--blue300), var(--grey700));
     text-decoration: none;
 }
 
 h4 {
     background-color: linear-gradient(270deg, var(--blue300), var(--grey700));
+    border-color: var(--grey700);
     border-style: solid;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-width: 2px;
+    border-width: var(--border-small);
     padding: var(--padding-small);
     margin-bottom: 2px;
 }
@@ -211,14 +215,23 @@ footer {
 
 
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 740px) {
     main {
         flex-wrap: wrap;
         display: flex;
     }
-.me {
-    margin-top: 1px;
-}
+
+    .me {
+        margin-top: 1px;
+    }
+
+    .info img {
+        display: block;
+        margin-top: var(--margin-small);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .info,
     main div,
     section.card {
@@ -230,6 +243,12 @@ footer {
         display: block;
     }
 
-}
+    h1,
+    header {
+        display: inline-block;
+        text-align: center;
+        padding-bottom: 1px;
+    }
 
-header,
+        
+}
