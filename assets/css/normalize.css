@@ -82,7 +82,7 @@ a {
 }
 
 /* NEED TO FIGURE OUT HOVER BUG, HOVER NOT WORKING */
-nav a:hover {
+nav:hover {
     box-shadow: inset 0px 0px 12px black, opx opx 20px black;
 }
 
@@ -128,7 +128,7 @@ h2 {
 
 }
 
-.section-block {
+.bio {
     background: linear-gradient(270deg, var(--blue300), var(--grey700));
     border: var(--border-small);
     border-color: var(--grey700);
@@ -189,7 +189,7 @@ h3 {
 
 }
 
-section {
+section.card {
     display: inline-block;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -241,6 +241,8 @@ footer {
         margin-left: var(--margin-medium);
         margin-right: var(--margin-medium);
     }
-
+footer {
+    display: block;
+}
 
 }
