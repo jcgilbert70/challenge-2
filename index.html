@@ -27,49 +27,46 @@
   <main>
     <!-- Profile Pic -->
     <section class="info">
-      <div>
-        <img src="./assets/img/profile.jpg" class="float" />
-      </div>
+      <img src="./assets/img/profile.jpg" class="float" />
 
       <!-- Section "about me" -->
       <aside>
-        <h2 class="me">About Me</h2>
-        <div id="about-me" class="about-me"></div>
+        <h2 id="about-me" class="me">About Me</h2>
         <p class="bio">
           information about me information about me information about me information about me information about me
           information about me information about me information about me information about me
         </p>
       </aside>
-
     </section>
 
     <!-- Work link content -->
-    <article class="content">
-      <div>
-        <div id="work" class="work"></div>
-        <h3><span style="padding-left: 60px;"></span>Work<span style="padding-left: 60px;"></span></h3>
-      </div>
-    </article>
-
-    <!-- anchor links the card to the project and opens on seperate page -->
-    <section class="card"><a href="https://jcgilbert70.github.io/challenge-1/" target="_blank" rel="noopener noreferrer">
-      <header>Challenge-1</header>
-      <img src="./assets/img/challenge-1.png">
-      <!-- Make element a link to page -->
-    </a>
+    <section id="work" class="work">
+      <h3><span style="padding-left: 120px;"></span>Work<span style="padding-left: 120px;"></span></h3>
     </section>
 
-    <section class="card"><!-- add link to href <a href="" target="_blank" rel="noopener noreferrer"> </a>-->
+    <!-- anchor links the card to the project and opens on seperate page -->
+    <section class="card"><a href="https://jcgilbert70.github.io/challenge-1/" target="_blank"
+        rel="noopener noreferrer">
+        <header>Horiseon Refactoring</header>
+        <img src="./assets/img/challenge-1.png">
+        <!-- Make element a link to page -->
+      </a>
+    </section>
+
+    <section class="card">
+      <!-- add link to href <a href="" target="_blank" rel="noopener noreferrer"> </a>-->
       <header>Challenge-2</header>
       <img src="./assets/img/placeholder.png"><!-- replace placeholder image with screenshot of project -->
     </section>
 
-    <section class="card"><!-- add link to href <a href="" target="_blank" rel="noopener noreferrer"> </a>-->
+    <section class="card">
+      <!-- add link to href <a href="" target="_blank" rel="noopener noreferrer"> </a>-->
       <header>Challenge-3</header>
       <img src="./assets/img/placeholder.png"><!-- replace placeholder image with screenshot of project -->
     </section>
 
-    <section class="card"><!-- add link to href <a href="" target="_blank" rel="noopener noreferrer"> </a> -->
+    <section class="card">
+      <!-- add link to href <a href="" target="_blank" rel="noopener noreferrer"> </a> -->
       <header>Challenge-4</header>
       <img src="./assets/img/placeholder.png"><!-- replace placeholder image with screenshot of project -->
     </section>
@@ -80,20 +77,13 @@
 
   <footer>
     <nav>
-      <h4><div id="contact-info"></div>Contact Information</h4>
+      <h5 id="contact-info">
+        </div>Contact Information</h5>
       <!-- Contact Information -->
-      <ul>
-        <li>
-          <a tabindex="0" href="#phone">Phone: 815.667.0402</a>
-        </li>
-        <li>
-          <a href="#email">Email: jcgilbert70@gmail.com</a>
-        </li>
-        <li>
-          <a href="www.linkedin.com/in/jeff-gilbert-6aa87b116
-          ">Linkedin</a>
-        </li>
-      </ul>
+      <a tabindex="0" href="#phone">Phone: 815.667.0402</a>
+      <a href="#email">Email: jcgilbert70@gmail.com</a>
+      <!-- FIX BUT WITH LINKEDIN REF -->
+      <a href="www.linkedin.com/in/jeff-gilbert-6aa87b116" target="_blank" rel="noopener noreferrer">Linkedin</a>
     </nav>
   </footer>
 </body>
