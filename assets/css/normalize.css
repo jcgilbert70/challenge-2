@@ -47,14 +47,16 @@ a {
     font-family: var(--font-anchor);
 }
 
-h2, .me, h3, h4{
+h2,
+.me,
+h3,
+h4 {
     font-family: var(--font-title);
 }
 
-.bio{
+.bio {
     font-family: var(--font-text);
 }
-
 
 .background {
     background-color: var(--grey200);
@@ -88,7 +90,7 @@ h1,
 h5 {
     display: inline-block;
     color: var(--grey200);
-    
+
     font-size: 48px;
     padding-top: var(--padding-medium);
     padding-bottom: var(--padding-small);
@@ -226,7 +228,7 @@ h3 {
 }
 
 h4 {
-    
+
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-style: solid;
