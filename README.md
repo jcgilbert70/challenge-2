@@ -15,7 +15,7 @@ I have added comments for some features planned to add on in the future, as well
 
 ## Screenshot
 
-![](assets/images/screenshot.png)
+<img src="assets/img/profile.png">
 
 ## Link to Application
 
