@@ -3,6 +3,7 @@
     --black: black;
     --blue300: rgb(160, 160, 255);
     --grey200: rgb(193, 195, 224);
+    --grey500: rgb(123, 117, 158);
     --grey700: #394f5a;
     --white: white;
     --grey100: gainsboro;
@@ -27,6 +28,7 @@
     /* fonts */
     --font-main: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
 
 
 * {
@@ -74,6 +76,12 @@ h5 {
 .contact a {
     color: var(--white);
     padding: 10px;
+    transition: .5s;
+}
+
+a:hover{
+    color:var(--black);
+    transform: scale(1.1);
 }
 
 /* CODE FOR MAIN */
@@ -90,6 +98,11 @@ main {
     max-height: 340px;
     max-width: 340px;
     margin: var(--margin-small);
+    transition: .5s;
+}
+
+.profile:hover {
+    transform: scale(1.1);
 }
 
 aside {
@@ -149,7 +162,7 @@ h3 {
     font-size: 48px;
 }
 
-section.work {
+.work {
     margin-left: var(--margin-small);
     margin-right: var(--margin-medium);
 }
@@ -165,11 +178,13 @@ section.work {
     border-width: var(--border-small);
     border-radius: 10px;
     border-color: var(--grey700);
+    box-sizing: border-box;
     box-shadow: 10px 10px 5px var(--grey700);
     height: 300px;
     min-width: 300px;
     display: inline-block;
     margin: var(--margin-small);
+    transition: .5s;
 }
 
 .image {
@@ -182,7 +197,9 @@ section.work {
 
 .container:hover{
     transform: scale(1.1);
+    background-color: var(--grey500);
     
+
 }
 
 h4 {
