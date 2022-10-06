@@ -38,6 +38,8 @@ body {
     background-color: var(--grey200);
 }
 
+
+
 /* Code for the header */
 
 header,
@@ -74,11 +76,6 @@ h5 {
     padding: 10px;
 }
 
-/* NEED TO FIGURE OUT HOVER BUG, HOVER NOT WORKING */
-nav a:hover {
-    box-shadow: inset 0px 7px 12px black, opx 10px 20px black;
-}
-
 /* CODE FOR MAIN */
 
 main {
@@ -89,7 +86,7 @@ main {
     display: flex;
 }
 
-.info img {
+.profile {
     max-height: 340px;
     max-width: 340px;
     margin: var(--margin-small);
@@ -158,16 +155,11 @@ section.work {
 }
 
 /* images within each card representing a different project in portfolio */
-.card img {
-    display: block;
-    max-width: 90%;
-    max-height: 85%;
-    margin-left: auto;
-    margin-right: auto;
-}
+
+
 
 /* represents a different poject within portfolio */
-.card {
+.container {
     background-color: var(--grey100);
     border-style: solid;
     border-width: var(--border-small);
@@ -178,6 +170,19 @@ section.work {
     min-width: 300px;
     display: inline-block;
     margin: var(--margin-small);
+}
+
+.image {
+    display: block;
+    max-width: 90%;
+    max-height: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container:hover{
+    transform: scale(1.1);
+    
 }
 
 h4 {
@@ -209,15 +214,11 @@ h5 {
         margin-top: 1px;
     }
 
-    .info img {
+    .profile{
         display: block;
         margin-top: var(--margin-small);
         margin-left: auto;
         margin-right: auto;
-    }
-
-    section.card {
-        margin-left: var(--margin-small);
     }
 
     .info {
