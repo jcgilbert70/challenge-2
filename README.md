@@ -19,11 +19,11 @@ I have added comments for some features planned to add on in the future, as well
 
 ## Link to Application
 
-https://jcgilbert70.github.io/challenge-2/
+https://jcgilbert70.github.io/portfolio/
 
 ## Link to Repository
 
-https://github.com/jcgilbert70/challenge-2.git
+https://github.com/jcgilbert70/portfolio.git
 
 ## Credits
 
